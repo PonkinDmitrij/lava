@@ -1,0 +1,49 @@
+:root {
+  // Colors
+
+  --black:                     #000000;
+  --white:                     #ffffff;
+  --cape-palliser:             #9b6842;
+  --metallic-bronze:           #3d3017;
+  --kabul:                     #5f523c;
+  --mongoose:                  #b89577;
+  --guardsman-red:             #bc0202;
+  --cameo:                     #dcc0a7;
+  --fantasy:                   #f9f3ee;
+
+  --text-color:                var(--black);
+  --body-bg:                   var(--fantasy);
+
+
+
+  // Typography
+
+  --font-size:                 16px;
+
+  --font-size-h1:              60px;
+  --font-size-h2:              42px;
+
+  --line-height:               1.3;
+
+  --font-family:               "Poppins", system-ui, sans-serif;
+  --second-family:             "Fahkwang", system-ui, sans-serif;
+
+
+
+  // Widths
+
+  --grid-gutter-width:         30px;
+
+  --container-lg:              calc(1170px + var(--grid-gutter-width));
+
+
+
+  // Different
+
+  --transition:                0.2s ease-in-out;
+}
+
+
+// Breakpoints
+
+  $screen-lg:                  1440px;

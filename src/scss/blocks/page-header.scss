@@ -1,0 +1,153 @@
+.page-header {
+  min-height: 116px;
+  padding: 14px 0;
+  background-color: var(--vanilla);
+
+  &__layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 122px;
+
+    @media (max-width: 1024px) {
+      column-gap: 50px;
+    }
+
+    @media (max-width: 480px) {
+      column-gap: 40px;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 134px;
+
+    @media (max-width: 900px) {
+      margin-right: auto;
+    }
+  }
+
+  &__nav {
+    flex: 1 0 420px;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 9px;
+
+    @media (max-width: 900px) {
+      flex-basis: 100%;
+      order: 1;
+      justify-content: center;
+      margin-top: 0;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: 900px) {
+      display: block;
+      max-height: 0;
+      text-align: center;
+      overflow: hidden;
+      transition: max-height var(--transition);
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 18px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--black);
+
+    @media (max-width: 900px) {
+      padding: 25px;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+      }
+    }
+
+    &:active {
+      color: var(--kabul);
+    }
+
+    &:focus-visible {
+      outline: 2px dashed var(--cape-palliser);
+    }
+
+    &--current {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 2px;
+
+      &:active {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__cart {
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-top: 21px;
+    padding-right: 8px;
+
+    & path {
+      fill: var(--black);
+      transition: fill var(--transition);
+    }
+
+    @media (hover: hover) {
+      &:hover path {
+        fill: var(--cape-palliser);
+      }
+    }
+
+    &:active path {
+      fill: var(--guardsman-red);
+    }
+
+    &:focus-visible {
+      outline: 2px dashed var(--cape-palliser);
+      outline-offset: 5px;
+    }
+  }
+
+  &__cart-count {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 5px;
+    border-radius: 9999px;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--white);
+    background-color: var(--guardsman-red);
+    text-align: center;
+  }
+
+  &__burger {
+    display: none;
+    margin-top: 24px;
+
+    @media (max-width: 900px) {
+      display: initial;
+    }
+  }
+}

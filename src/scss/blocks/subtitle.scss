@@ -1,0 +1,17 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black);
+
+  &::after {
+    content: '';
+    flex-shrink: 0;
+    width: 28px;
+    height: 1px;
+    margin-left: 12px;
+    background-color: var(--cape-palliser);
+  }
+}
